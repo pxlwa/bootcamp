@@ -98,9 +98,3 @@ section {
   flex-direction: column;
   margin: 50px auto;
 }
-
-.header {
-  font-size: 22px;
-  padding: 0px;
-  margin: 0px;
-}
