@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+    <link href="assets/css/navbar.css" rel="stylesheet" />
+    <link href="assets/css/all.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/35b81b9f99.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--start navbar-->
+    <header>
+      <nav>
+        <div class="left-side">
+          <a href="#">
+            <img src="assets/img/itulah.png" style="margin-top: 8px" />
+          </a>
+          <ul>
+            <li>
+              <a href="index.html" style="color: #fff">Home</a>
+            </li>
+            <li>
+              <a href="#" class="active">Project</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="right-side">
+          <a href="contact-me.html"> Contact Me</a>
+        </div>
+      </nav>
+    </header>
+    <!--end navbar-->
+
+    <!--content-->
+    <div class="container-content-contactme">
+      <!--table-->
+      <section class="container-content-contactme" style="margin: center">
+        <div>
+          <form>
+            <!--intputan-->
+
+            <!--project name-->
+            <div>
+              <div>
+                <label
+                  for="projectName"
+                  style="font-size: 18px; font-weight: bold"
+                ></label>
+
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Project Name"
+                  style="
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 8px;
+                    margin-top: 5px;
+                    margin-bottom: 20px;
+                    border-radius: 8px;
+                    border: 1px solid #c4c4c4;
+                  "
+                />
+              </div>
+              <!--end of projectname-->
+
+              <!--start date-->
+
+              <div class="date">
+                <label
+                  for="date"
+                  style="font-size: 18px; font-weight: bold"
+                ></label>
+                <input
+                  type="date"
+                  id="startDate"
+                  placeholder="Start Date"
+                  value=""
+                  min="2010-01-01"
+                  max="2030-12-31"
+                  style="
+                    width: 50%;
+
+                    box-sizing: border-box;
+                    padding: 8px;
+                    margin-top: 5px;
+                    margin-bottom: 20px;
+                    border-radius: 8px;
+                    border: 1px solid #c4c4c4;
+                  "
+                /><label
+                  for="endDate"
+                  style="font-size: 18px; font-weight: bold"
+                ></label>
+
+                <input
+                  type="date"
+                  id="endDate"
+                  placeholder="End Date"
+                  value=""
+                  min="2010-01-01"
+                  max="2030-12-31"
+                  style="
+                    width: 50%;
+                    box-sizing: border-box;
+                    padding: 8px;
+                    margin-top: 5px;
+                    margin-bottom: 20px;
+                    border-radius: 8px;
+                    border: 1px solid #c4c4c4;
+                  "
+                />
+
+                <!--end of startdate-->
+
+                <!--enddate-->
+              </div>
+
+              <!--end of enddate-->
+
+              <!--description-->
+              <div>
+                <label
+                  for="description"
+                  style="opacity: 0%; font-size: 18px; font-weight: bold"
+                  >Description</label
+                >
+                <textarea
+                  id="description"
+                  placeholder="Description"
+                  style="
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 8px;
+                    margin-top: -10px;
+                    margin-bottom: 20px;
+                    border-radius: 8px;
+                    border: 1px solid #c4c4c4;
+                    height: 100px;
+                    resize: none;
+                  "
+                ></textarea>
+              </div>
+              <!--end ofdescription-->
+
+              <!--checkboxs-->
+              <div class="projectTech">
+                <label for="tech">Technologies</label>
+                <div class="technologiesList">
+                  <div>
+                    <input
+                      type="checkbox"
+                      name="react"
+                      id="react"
+                      value="React Js"
+                      class="checkbox"
+                    />
+                    <label for="react">React Js</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      name="node"
+                      id="node"
+                      value="Node Js"
+                      class="checkbox"
+                    />
+                    <label for="node">Node Js</label>
+                  </div>
+
+                  <div>
+                    <input
+                      type="checkbox"
+                      name="javascript"
+                      id="javascript"
+                      value="Javascript"
+                      class="checkbox"
+                    />
+                    <label for="javascript">Javascript</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      name="angular"
+                      id="angular"
+                      value="Angular"
+                      class="checkbox"
+                    />
+                    <label for="angular">Angular</label>
+                  </div>
+                </div>
+              </div>
+              <!--end ofcheckboxs-->
+              <!--thumbnail-->
+              <div class="projectThumbnail" style="margin-top: 20px">
+                <label for="image">Upload Image</label>
+                <input
+                  type="file"
+                  name="image"
+                  id="image"
+                  accept="image/png, image/gif, image/jpeg"
+                  required
+                />
+              </div>
+
+              <!--end ofthumbnail-->
+              <!--button-->
+              <div>
+                <button
+                  class="button"
+                  type="button"
+                  onclick="getData()"
+                  style="margin-top: 20px"
+                >
+                  Submit
+                </button>
+              </div>
+              <!--end of button-->
+              <!--end of inputan-->
+            </div>
+          </form>
+        </div>
+      </section>
+      <!--end of table-->
+    </div>
+
+    <!--end of content-->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

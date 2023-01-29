@@ -98,3 +98,13 @@ section {
   flex-direction: column;
   margin: 50px auto;
 }
+
+form .technologiesList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.date {
+  display: grid;
+  grid-template-columns: subgrid;
+}
