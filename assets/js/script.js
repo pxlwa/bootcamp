@@ -34,3 +34,13 @@ function getData() {
   };
   console.log(audience);
 }
+
+//project
+// function getData(){
+//   let projectName = document.getElementById("projectName").value;
+//   let startDate = document.getElementById("startDate").value;
+//   let endDate = document.getElementById("endDate").value;
+//   let description = document.getElementById("description").value;
+//   let description = document.getElementById("description").value;
+
+// }

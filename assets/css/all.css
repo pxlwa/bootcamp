@@ -59,6 +59,7 @@ section {
 .button {
   font-size: 15px;
   margin-top: 5px;
+  margin-left: 20rem;
   padding: 8px 20px;
   background-color: #645cbb;
   border-radius: 10px;
@@ -96,7 +97,7 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 50px auto;
+  margin: 40px auto;
 }
 
 form .technologiesList {
